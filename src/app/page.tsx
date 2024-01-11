@@ -7,18 +7,18 @@ import Image from "next/image";
 export default function Home() {
   return (
     <>
-      <main className="flex  flex-col items-center justify-between p-8">
+      <main className="flex  flex-col items-center justify-between p-8 bg-slate-500">
         <CarouselDemo />
-        <div className="p-8">
+        <div className="p-8 bg-slate-500">
           {" "}
           <AlertDialogDemo />
         </div>
       </main>
-      <div className="p-8">
+      <div className="p-8 bg-slate-500">
         {" "}
-        <AccordionDemo />
+        <AccordionDemo  />
       </div>
-      <div className="w-screen h-screen flex justify-center item-center p-8">
+      <div className=" flex justify-center item-center p-8 bg-slate-500">
         {" "}
         <CardDemo/>
       </div>
