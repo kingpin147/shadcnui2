@@ -9,25 +9,28 @@ import { Calendar } from "@/components/ui/calendar";
 
 import Image from "next/image";
 import { ButtonSecondary } from './../components/button';
+import { ComboboxDemo } from "@/components/comboBox";
+import { SheetDemo } from "@/components/sheet";
+import { CommandDemo } from "@/components/customSearch";
 
 export default function Home() {
   return (
     <>
-      <main className="flex  flex-col items-center justify-between p-8 bg-slate-500">
+      <main className="flex  flex-col items-center justify-between p-8 bg-slate-200">
         {/* caraousel */}
         <CarouselDemo />
-        <div className="p-8 bg-slate-500">
+        <div className="p-8 bg-slate-300">
           {" "}
           {/* alert dialog */}
           <AlertDialogDemo />
         </div>
       </main>
-      <div className="p-8 bg-slate-500">
+      <div className="p-8 bg-slate-300">
         {" "}
         {/* accordion */}
         <AccordionDemo  />
       </div>
-      <div className=" flex justify-center item-center p-8 bg-slate-500">
+      <div className=" flex justify-center item-center p-8 bg-slate-300">
         {" "}
         {/* profile Card */}
         <CardDemo/>
@@ -47,8 +50,24 @@ export default function Home() {
         <div className="flex justify-center items-center p-5 ">
           <Calendar/>
          
+          </div></div>
+             {/* Combo div */}
+          <div className="flex justify-center items-center p-9 ">
+          <ComboboxDemo/>
+         
           </div>
-        </div>
+             {/* Sheet div */}
+             <div className="flex justify-center items-center p-9 ">
+          <SheetDemo/>
+         
+          </div>
+        
+
+         {/* Global Search div */}
+         <div className="flex justify-center items-center p-9 ">
+          <CommandDemo/>
+         
+          </div>
     </>
   );
 }
